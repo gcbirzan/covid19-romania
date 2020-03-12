@@ -1,14 +1,15 @@
 <template>
+    <div class="map">
         <div class="flex-container" id="containerdiv">
             <div class="map-size" >
                 <div class="map-size fixed-map" id="mapdiv">
 
                     <RomaniaMap/>
-
                 </div>
             </div>
-            <CasesTable/>
         </div>
+
+    </div>
 </template>
 
 <script>
@@ -17,15 +18,20 @@
     import CasesTable from "@/components/CasesTable";
 
     export default {
-        name: 'Home',
+        name: 'Map',
         components: {
             CasesTable,
             RomaniaMap
         }
     }
 </script>
-
 <style scoped>
+    #mapdiv {
+        height: 100vh;
+        width: 100vh;
+        position: absolute !important;
+    }
+
     @media only screen and (min-width: 600px) {
         .flex-container {
             display: flex;
@@ -43,7 +49,7 @@
 
     @media only screen and (max-width: 600px) {
         .map-display {
-            display: none;
+            display: flex;
         }
 
     }

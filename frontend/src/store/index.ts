@@ -18,5 +18,21 @@ export default class COVID19 extends VuexModule {
         this.fetched_data = true;
 
     }
+    
+    log = {};
+    fetched_log = false;
+
+    @Action({commit: 'log_fetched'})
+    async fetch_log() {
+        const result = await axios.get(`https://storage.googleapis.com/covid19-romania/data/latest_log.json`);
+        return result.data;
+    }
+
+    @Mutation
+    log_fetched(log: any) {
+        this.log = log;
+        this.fetched_log = true;
+
+    }
 
 }

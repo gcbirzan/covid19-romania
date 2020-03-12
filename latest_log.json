@@ -1,0 +1,156 @@
+[
+  {
+    "judet": "Bucure\u015fti",
+    "cazuri_initiale": 12,
+    "cazuri_finale": 14,
+    "cazuri_delta": 2,
+    "timestamp": "2020-03-11T13:56:18.757000+00:00"
+  },
+  {
+    "judet": "Covasna",
+    "cazuri_initiale": 0,
+    "cazuri_finale": 1,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-11T13:56:24.969000+00:00"
+  },
+  {
+    "judet": "Ia\u015fi",
+    "cazuri_initiale": 1,
+    "cazuri_finale": 2,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-11T13:56:11.095000+00:00"
+  },
+  {
+    "judet": "Bucure\u015fti",
+    "cazuri_initiale": 14,
+    "cazuri_finale": 15,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-11T14:15:18.648000+00:00"
+  },
+  {
+    "judet": "Bucure\u015fti",
+    "cazuri_initiale": 15,
+    "cazuri_finale": 16,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-11T15:13:44.929000+00:00"
+  },
+  {
+    "judet": "Bucure\u015fti",
+    "cazuri_initiale": 16,
+    "cazuri_finale": 17,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-11T16:30:39.841000+00:00"
+  },
+  {
+    "judet": "Constan\u0163a",
+    "cazuri_initiale": 0,
+    "cazuri_finale": 1,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-11T18:13:32.977000+00:00"
+  },
+  {
+    "judet": "Arad",
+    "cazuri_initiale": 0,
+    "cazuri_finale": 5,
+    "cazuri_delta": 5,
+    "timestamp": "2020-03-11T18:28:41.160000+00:00"
+  },
+  {
+    "judet": "Br\u0103ila",
+    "cazuri_initiale": 0,
+    "cazuri_finale": 1,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-11T18:54:46.052000+00:00"
+  },
+  {
+    "judet": "Dolj",
+    "cazuri_initiale": 0,
+    "cazuri_finale": 2,
+    "cazuri_delta": 2,
+    "timestamp": "2020-03-12T07:31:57.250000+00:00"
+  },
+  {
+    "judet": "Gorj",
+    "cazuri_initiale": 1,
+    "cazuri_finale": 2,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-12T07:32:08.856000+00:00"
+  },
+  {
+    "judet": "Hunedoara",
+    "cazuri_initiale": 4,
+    "cazuri_finale": 2,
+    "cazuri_delta": -2,
+    "timestamp": "2020-03-12T07:32:20.977000+00:00"
+  },
+  {
+    "judet": "Ia\u015fi",
+    "cazuri_initiale": 2,
+    "cazuri_finale": 1,
+    "cazuri_delta": -1,
+    "timestamp": "2020-03-12T07:32:25.870000+00:00"
+  },
+  {
+    "judet": "Arad",
+    "cazuri_initiale": 5,
+    "cazuri_finale": 0,
+    "cazuri_delta": -5,
+    "timestamp": "2020-03-12T07:35:56.975000+00:00"
+  },
+  {
+    "judet": "Br\u0103ila",
+    "cazuri_initiale": 1,
+    "cazuri_finale": 0,
+    "cazuri_delta": -1,
+    "timestamp": "2020-03-12T07:36:30.238000+00:00"
+  },
+  {
+    "judet": "Bucure\u015fti",
+    "cazuri_initiale": 17,
+    "cazuri_finale": 21,
+    "cazuri_delta": 4,
+    "timestamp": "2020-03-12T07:34:31.880000+00:00"
+  },
+  {
+    "judet": "Hunedoara",
+    "cazuri_initiale": 2,
+    "cazuri_finale": 4,
+    "cazuri_delta": 2,
+    "timestamp": "2020-03-12T07:33:50.209000+00:00"
+  },
+  {
+    "judet": "Ia\u015fi",
+    "cazuri_initiale": 1,
+    "cazuri_finale": 2,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-12T07:34:05.116000+00:00"
+  },
+  {
+    "judet": "Olt",
+    "cazuri_initiale": 1,
+    "cazuri_finale": 2,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-12T07:32:36.954000+00:00"
+  },
+  {
+    "judet": "Satu Mare",
+    "cazuri_initiale": 0,
+    "cazuri_finale": 1,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-12T07:32:41.525000+00:00"
+  },
+  {
+    "judet": "Vrancea",
+    "cazuri_initiale": 0,
+    "cazuri_finale": 1,
+    "cazuri_delta": 1,
+    "timestamp": "2020-03-12T07:33:15.089000+00:00"
+  },
+  {
+    "judet": "Bucure\u015fti",
+    "cazuri_initiale": 21,
+    "cazuri_finale": 20,
+    "cazuri_delta": -1,
+    "timestamp": "2020-03-12T09:34:09.475000+00:00"
+  }
+]

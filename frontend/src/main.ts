@@ -28,5 +28,16 @@ const store = new Vuex.Store({
 new Vue({
     router,
     store,
-    render: h => h(App)
+    render: h => h(App),
+    created: function () {
+
+        this.$store.dispatch('fetch_data');
+        this.$store.dispatch('fetch_log');
+        setInterval(() => {
+            this.$store.dispatch('fetch_data');
+            this.$store.dispatch('fetch_log');
+
+        }, 60000);
+
+    }
 }).$mount('#app')
