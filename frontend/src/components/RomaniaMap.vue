@@ -1,5 +1,6 @@
 <template>
-        <l-map :center="mapCenter" :options="mapOptions" class="map-display" v-if="covid19.fetched_data">
+    <div class="map-size fixed-map" id="mapdiv">
+        <l-map :center="mapCenter" :options="mapOptions" class="map-display" v-if="covid19.fetched_data" ref="map">
 
             <l-choropleth-layer :data="covid19.data" title-key="Judete" id-key="SIRUTA_judet"
                                 :value="value_mapping" geojson-id-key="countyCode"
@@ -9,21 +10,24 @@
                     <l-info-control :item="props.currentItem" :unit="props.unit" title="Judet"
                                     placeholder="Mouse over pentru mai multe informatii"/>
                     <l-reference-chart title="Infectii confirmate" :colorScale="colorScale" :min="props.min"
-                                       :max="props.max" position="bottomright"/>
+                                       :max="props.max" position="topleft"/>
                 </template>
 
             </l-choropleth-layer>
         </l-map>
+        <b-form-select v-model="selected" :options="mapSelectOptions"></b-form-select>
+    </div>
 </template>
 
 <script>
-    import {Component, Prop, Vue} from 'vue-property-decorator';
+    import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import geojson from '../assets/counties.json';
-    // import values from '../assets/covid_data_fixed.json';
+    import * as _ from "lodash";
     import {LMap, LTileLayer} from "vue2-leaflet";
     import {InfoControl, ReferenceChart, ChoroplethLayer} from 'vue-choropleth'
     import {latLng} from "leaflet";
     import {mapState} from "vuex";
+    import {Debounce} from "lodash-decorators";
 
     @Component({
         components: {
@@ -39,7 +43,27 @@
 
     })
     export default class RomaniaMap extends Vue {
+        resize(message, event) {
+            console.log(message, event);
+            setTimeout(() => this.$refs.map.mapObject.fitBounds(
+                [[43.6884447292, 20.2201924985], [48.2208812526, 29.62654341]]), 50)
+        }
 
+        get fetched() {
+            return this.$store.state.covid19.fetched_data;
+        }
+
+        @Watch('fetched')
+        data_feched() {
+            Vue.nextTick(this.resize)
+        }
+        mounted() {
+            Vue.nextTick(this.resize)
+
+        }
+        created() {
+            window.addEventListener('resize', this.resize);
+        }
 
         get value_mapping() {
             const selected = this.$data.selected;
@@ -64,9 +88,11 @@
                 mapOptions: {
                     attributionControl: false,
                     zoomControl: false,
-                    minZoom: 7,
-                    maxZoom: 7,
-                    zoom: 7,
+                    zoomDelta: 0.25,
+                    zoomSnap: 0.25,
+                    // minZoom: 7,
+                    // maxZoom: 7,
+                    // fitBounds: 7,
 
                 },
                 mapSelectOptions: [

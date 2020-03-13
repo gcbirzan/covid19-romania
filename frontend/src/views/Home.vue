@@ -1,11 +1,9 @@
 <template>
         <div class="flex-container" id="containerdiv">
             <div class="map-size" >
-                <div class="map-size fixed-map" id="mapdiv">
 
                     <RomaniaMap/>
 
-                </div>
             </div>
             <CasesTable/>
         </div>
@@ -26,7 +24,7 @@
 </script>
 
 <style scoped>
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 1000px) {
         .flex-container {
             display: flex;
         }
@@ -41,8 +39,8 @@
         }
     }
 
-    @media only screen and (max-width: 600px) {
-        .map-display {
+    @media only screen and (max-width: 1000px) {
+        .map-size {
             display: none;
         }
 

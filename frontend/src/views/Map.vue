@@ -1,15 +1,11 @@
 <template>
-    <div class="map">
         <div class="flex-container" id="containerdiv">
             <div class="map-size" >
-                <div class="map-size fixed-map" id="mapdiv">
 
                     <RomaniaMap/>
-                </div>
+
             </div>
         </div>
-
-    </div>
 </template>
 
 <script>
@@ -27,31 +23,31 @@
 </script>
 <style scoped>
     #mapdiv {
-        height: 100vh;
-        width: 100vh;
+        height: 60vh;
+        width: 98vw;
         position: absolute !important;
     }
 
-    @media only screen and (min-width: 600px) {
-        .flex-container {
-            display: flex;
-        }
+    /*@media only screen and (min-width: 600px) {*/
+    /*    .flex-container {*/
+    /*        display: flex;*/
+    /*    }*/
 
-        .map-size {
-            height: 80vh;
-            width: 55vw;
-        }
+    /*    .map-size {*/
+    /*        height: 80vh;*/
+    /*        width: 55vw;*/
+    /*    }*/
 
-        .fixed-map {
-            position: fixed
-        }
-    }
+    /*    .fixed-map {*/
+    /*        position: fixed*/
+    /*    }*/
+    /*}*/
 
-    @media only screen and (max-width: 600px) {
-        .map-display {
-            display: flex;
-        }
+    /*@media only screen and (max-width: 600px) {*/
+    /*    .map-display {*/
+    /*        display: flex;*/
+    /*    }*/
 
-    }
+    /*}*/
 
 </style>
