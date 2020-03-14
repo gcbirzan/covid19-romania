@@ -18,5 +18,9 @@
     }
 </script>
 <style scoped>
+    .flex-container {
+        width:100%;
+        height:70vh;
+    }
 
 </style>

@@ -1,9 +1,7 @@
 <template>
         <div class="flex-container" id="containerdiv">
-            <div class="map-size" >
-
-                    <RomaniaMap/>
-
+            <div class="home-map-container">
+                <RomaniaMap/>
             </div>
             <CasesTable/>
         </div>
@@ -28,22 +26,19 @@
         display: flex;
         flex-wrap:wrap;
         justify-content:space-between;
+        align-items: stretch;
     }
 
-    .map-size {
-        height: 40vh;
+    .home-map-container {
         flex-basis:90%;
     }
 
-    .fixed-map {
-        width:100%;
-        height:100%;
-    }
-
     @media all and (min-width:800px){
-        .map-size {
+        .home-map-container {
             height: 70vh;
             flex-basis:50%;
+            position:sticky;
+            top:10vh;
         }
     }
 

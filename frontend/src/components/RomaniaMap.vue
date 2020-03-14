@@ -170,7 +170,10 @@
 </script>
 
 <style scoped>
-
+    .fixed-map { 
+        width:100%;
+        height:60vh;
+    }
     .fixed-map >>> .info.leaflet-control {
         margin:0.5rem;
         font-size:0.8rem; 
@@ -178,6 +181,10 @@
     .fixed-map >>> .info.leaflet-control h4 { font-size:0.8rem; }
 
 @media all and (min-width:800px){
+    .fixed-map { 
+        width:100%;
+        height:70vh;
+    }
     .fixed-map >>> .info.leaflet-control, .fixed-map >>> .info.leaflet-control h4 { font-size:1.2rem; }
 }
 </style>
