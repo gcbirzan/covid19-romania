@@ -22,12 +22,10 @@
 <script>
     import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import geojson from '../assets/counties.json';
-    import * as _ from "lodash";
     import {LMap, LTileLayer} from "vue2-leaflet";
     import {InfoControl, ReferenceChart, ChoroplethLayer} from 'vue-choropleth'
     import {latLng} from "leaflet";
     import {mapState} from "vuex";
-    import {Debounce} from "lodash-decorators";
 
     @Component({
         components: {

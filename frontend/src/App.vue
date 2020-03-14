@@ -20,10 +20,6 @@
         </b-navbar>
 
         <b-container fluid>
-                <b-alert show variant="danger" >
-      De la ora 16:40 13 martie, ISNP nu mai ofera aceste date public. Daca vor remedia situatia, site-ul va avea update-uri din nou.
-    </b-alert>
-
             <b-row>
                 <b-col cols="12 ">
                     <router-view></router-view>
