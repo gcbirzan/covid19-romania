@@ -24,26 +24,36 @@
 </script>
 
 <style scoped>
-    @media only screen and (min-width: 1000px) {
-        .flex-container {
-            display: flex;
-        }
-
-        .map-size {
-            height: 80vh;
-            width: 55vw;
-        }
-
-        .fixed-map {
-            position: fixed
-        }
+    .flex-container {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
     }
 
-    @media only screen and (max-width: 1000px) {
+    .map-size {
+        height: 40vh;
+        flex-basis:90%;
+    }
+
+    .fixed-map {
+        width:100%;
+        height:100%;
+    }
+    .data-table {
+        margin-top:50px;
+        flex-basis: 90%;
+    }
+
+    @media all and (min-width:769px){
         .map-size {
-            display: none;
+            height: 70vh;
+            flex-basis:50%;
         }
 
+        .data-table {
+            flex-basis:45%;
+            margin-top:0;
+        } 
     }
 
 </style>

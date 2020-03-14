@@ -1,5 +1,5 @@
 <template>
-    <div class="map-size fixed-map" id="mapdiv">
+    <div class="fixed-map" id="mapdiv">
         <l-map :center="mapCenter" :options="mapOptions" class="map-display" v-if="covid19.fetched_data" ref="map">
 
             <l-choropleth-layer :data="covid19.data" title-key="Judete" id-key="SIRUTA_judet"

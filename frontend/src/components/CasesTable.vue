@@ -1,5 +1,5 @@
 <template>
-    <div v-if="covid19.fetched_data" id="tablediv" style="width: 40vw">
+    <div v-if="covid19.fetched_data" id="tablediv" class="data-table">
         <b-table :small="true" hover :items="covid19.data" :fields="tableFields"
                  sort-by="Cazuri_confirmate"
                  :sort-desc="true">
