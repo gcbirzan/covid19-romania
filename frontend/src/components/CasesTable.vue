@@ -73,7 +73,7 @@
 
 <style scoped>
     .data-table {
-        margin-top:50px;
+        margin-top:5rem;
         flex-basis: 100%;
     }
         .data-table >>> th {
@@ -83,7 +83,7 @@
      @media all and (min-width:800px){
         .data-table {
             flex-basis:45%;
-            margin-top:0;
+            margin-top:1rem;
         } 
         .data-table >>> th {
                 font-size: 1rem;
