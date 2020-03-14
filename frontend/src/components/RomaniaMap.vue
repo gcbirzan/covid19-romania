@@ -8,7 +8,7 @@
                                 :key="selected">
                 <template slot-scope="props">
                     <l-info-control :item="props.currentItem" :unit="props.unit" title="Judet"
-                                    placeholder="Mouse over pentru mai multe informatii"/>
+                                    placeholder="Mouse over(sau click) pentru mai multe informatii"/>
                     <l-reference-chart title="Infectii confirmate" :colorScale="colorScale" :min="props.min"
                                        :max="props.max" position="topleft"/>
                 </template>
@@ -45,7 +45,7 @@
     export default class RomaniaMap extends Vue {
         resize(message, event) {
             if(this.$refs.map){
-                setTimeout(() => this.$refs.map.mapObject.fitBounds([[43.6884447292, 20.2201924985], [48.2208812526, 29.62654341]]), 50)
+               this.$refs.map.mapObject.fitBounds([[43.6884447292, 20.2201924985], [48.2208812526, 29.62654341]])
             }
         }
 
@@ -58,7 +58,7 @@
             Vue.nextTick(this.resize)
         }
         mounted() {
-            Vue.nextTick(this.resize)
+            this.$nextTick(this.resize)
 
         }
         created() {
@@ -170,5 +170,8 @@
 </script>
 
 <style>
+@media all and (min-width:800px){
+    .fixed-map >>> .info.leaflet-control { font-size:12px; }
+}
 
 </style>

@@ -22,9 +22,5 @@
     }
 </script>
 <style scoped>
-    #mapdiv {
-        height: 60vh;
-        
-    }
 
 </style>

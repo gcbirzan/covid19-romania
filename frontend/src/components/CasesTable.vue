@@ -6,7 +6,7 @@
             <template v-slot:thead-top="data">
                 <b-tr>
                     <b-th></b-th>
-                    <b-th v-for="field in totals">
+                    <b-th v-for="field in totals" v-bind:key="field.id">
                         {{field}}
                     </b-th>
                 </b-tr>
@@ -72,5 +72,22 @@
 </script>
 
 <style scoped>
+    .data-table {
+        margin-top:50px;
+        flex-basis: 100%;
+    }
+        .data-table >>> th {
+            font-size: 0.8rem;
+        }
 
+     @media all and (min-width:800px){
+        .data-table {
+            flex-basis:45%;
+            margin-top:0;
+        } 
+        .data-table >>> th {
+                font-size: 1rem;
+            }
+        
+    }
 </style>

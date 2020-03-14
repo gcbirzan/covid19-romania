@@ -39,21 +39,12 @@
         width:100%;
         height:100%;
     }
-    .data-table {
-        margin-top:50px;
-        flex-basis: 90%;
-    }
 
     @media all and (min-width:800px){
         .map-size {
             height: 70vh;
             flex-basis:50%;
         }
-
-        .data-table {
-            flex-basis:45%;
-            margin-top:0;
-        } 
     }
 
 </style>
