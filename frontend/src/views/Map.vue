@@ -1,10 +1,6 @@
 <template>
         <div class="flex-container" id="containerdiv">
-           
-
-                    <RomaniaMap/>
-
- 
+            <RomaniaMap/>
         </div>
 </template>
 
