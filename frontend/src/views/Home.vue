@@ -38,7 +38,7 @@
             height: 70vh;
             flex-basis:50%;
             position:sticky;
-            top:10vh;
+            top:5rem;
         }
     }
 
