@@ -44,9 +44,9 @@
     })
     export default class RomaniaMap extends Vue {
         resize(message, event) {
-            console.log(message, event);
-            setTimeout(() => this.$refs.map.mapObject.fitBounds(
-                [[43.6884447292, 20.2201924985], [48.2208812526, 29.62654341]]), 50)
+            if(this.$refs.map){
+                setTimeout(() => this.$refs.map.mapObject.fitBounds([[43.6884447292, 20.2201924985], [48.2208812526, 29.62654341]]), 50)
+            }
         }
 
         get fetched() {

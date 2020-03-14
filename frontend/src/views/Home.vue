@@ -44,7 +44,7 @@
         flex-basis: 90%;
     }
 
-    @media all and (min-width:769px){
+    @media all and (min-width:800px){
         .map-size {
             height: 70vh;
             flex-basis:50%;
