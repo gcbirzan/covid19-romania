@@ -13,19 +13,14 @@
 <script>
     import {Component, Vue} from "vue-property-decorator";
     import {mapState} from "vuex";
+    import {BTable} from "bootstrap-vue";
 
     @Component({
         computed: mapState(['covid19']),
+        components: {BTable}
 
     })
     export default class Log extends Vue {
-        mounted() {
-            this.$store.dispatch('fetch_log');
-            setInterval(() => {
-                this.$store.dispatch('fetch_log');
-            }, 60000);
-
-        }
 
     }
 

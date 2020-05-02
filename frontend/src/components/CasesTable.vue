@@ -19,9 +19,11 @@
 <script>
     import {Component, Vue} from "vue-property-decorator";
     import {mapState} from "vuex";
+    import {BTable, BTh, BTr} from "bootstrap-vue";
 
     @Component({
         computed: mapState(['covid19']),
+        components: {BTable, BTr, BTh}
 
     })
     export default class RomaniaMap extends Vue {
@@ -73,21 +75,23 @@
 
 <style scoped>
     .data-table {
-        margin-top:5rem;
+        margin-top: 5rem;
         flex-basis: 100%;
     }
-        .data-table >>> th {
-            font-size: 0.8rem;
+
+    .data-table >>> th {
+        font-size: 0.8rem;
+    }
+
+    @media all and (min-width: 800px) {
+        .data-table {
+            flex-basis: 45%;
+            margin-top: 1rem;
         }
 
-     @media all and (min-width:800px){
-        .data-table {
-            flex-basis:45%;
-            margin-top:1rem;
-        } 
         .data-table >>> th {
-                font-size: 1rem;
-            }
-        
+            font-size: 1rem;
+        }
+
     }
 </style>

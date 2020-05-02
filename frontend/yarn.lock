@@ -3812,6 +3812,16 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
 
+highcharts-vue@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/highcharts-vue/-/highcharts-vue-1.3.5.tgz#9a3e5f6050bf0227c19238433abfb17ab7262db3"
+  integrity sha512-By1kc3m8XoI20pMshs/ue69j4rH6eQioDPoIrtC20RTti4QyvNAx8DisGSO3GAWe9sn50hPk8NsyxcwZIGaz3Q==
+
+highcharts@^8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-8.0.4.tgz#a717434012bd5f9b82b94b737d62acec501d360c"
+  integrity sha512-RD86/w7VNwuY96c2Pv16dtZujJ4vg5viiVjbFF/TCrvFpmtQRzBIECG90ww0JtiK6+6TKlwCYf0an+kgQshnRw==
+
 highlight.js@^9.6.0:
   version "9.18.1"
   resolved "https://registry.npm.taobao.org/highlight.js/download/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
@@ -5035,6 +5045,11 @@ move-concurrently@^1.0.1:
     mkdirp "^0.5.1"
     rimraf "^2.5.4"
     run-queue "^1.0.3"
+
+moving-averages@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/moving-averages/-/moving-averages-4.0.5.tgz#f1afea7eda8f956694a98857904cee780a4dc03d"
+  integrity sha512-ofrBYz5tIiN3E24a9Q5evRprvb1AQLciE4fnblpv8P0zM/pwwEdGj7GgDQwSxyrAVNe3hfzn9IB5nXi0zt92AA==
 
 ms@2.0.0:
   version "2.0.0"
@@ -7624,6 +7639,13 @@ vue-class-component@^7.1.0, vue-class-component@^7.2.2:
   resolved "https://registry.npm.taobao.org/vue-class-component/download/vue-class-component-7.2.3.tgz#a5b1abd53513a72ad51098752e2dedd499807cca"
   integrity sha1-pbGr1TUTpyrVEJh1Li3t1JmAfMo=
 
+vue-cli-plugin-webpack-bundle-analyzer@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-webpack-bundle-analyzer/-/vue-cli-plugin-webpack-bundle-analyzer-2.0.0.tgz#160fbd492a673bae1be3a9f714db12218678fa01"
+  integrity sha512-zOsxSaJC0+yYqnJNsxvGJOgtso8kL2ejlsx3p614LTNFSzaxc+KJ8AsBb712Yw19eVzhCXZrCpnhRad3kRa+aw==
+  dependencies:
+    webpack-bundle-analyzer "^3.6.0"
+
 vue-functional-data-merge@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/vue-functional-data-merge/-/vue-functional-data-merge-3.1.0.tgz#08a7797583b7f35680587f8a1d51d729aa1dc657"
@@ -7645,6 +7667,11 @@ vue-loader@^15.8.3:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-multiselect@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/vue-multiselect/-/vue-multiselect-2.1.6.tgz#5be5d811a224804a15c43a4edbb7485028a89c7f"
+  integrity sha512-s7jmZPlm9FeueJg1RwJtnE9KNPtME/7C8uRWSfp9/yEN4M8XcS/d+bddoyVwVnvFyRh9msFo0HWeW0vTL8Qv+w==
+
 vue-property-decorator@^8.3.0:
   version "8.4.0"
   resolved "https://registry.npm.taobao.org/vue-property-decorator/download/vue-property-decorator-8.4.0.tgz#f4e641f84ca51a7b4721e236392a1efbb6eac00b"
@@ -7664,6 +7691,11 @@ vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   dependencies:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
+
+vue-sync@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/vue-sync/-/vue-sync-3.2.0.tgz#44f339fe132d0529aba285cfa2a788a9d0dcd757"
+  integrity sha1-RPM5/hMtBSmrooXPoqeIqdDc11c=
 
 vue-template-compiler@^2.6.11:
   version "2.6.11"

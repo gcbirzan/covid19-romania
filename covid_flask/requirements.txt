@@ -1,0 +1,9 @@
+Flask
+requests
+flask-admin
+sqlalchemy
+flask-sqlalchemy
+flask-restless
+Flask-Caching
+flask-debugtoolbar
+flask-security
